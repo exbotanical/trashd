@@ -1,7 +1,7 @@
 (test
  (name test_trashd)
  (modules test_trashd)
- (libraries trashd fixtures ounit2))
+ (libraries trash fixtures ounit2))
 
 (library
  (name fixtures)

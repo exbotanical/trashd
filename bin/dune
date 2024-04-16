@@ -1,4 +1,11 @@
 (executable
+ (public_name trash)
+ (name trash)
+ (modules trash)
+ (libraries trash))
+
+(executable
  (public_name trashd)
- (name main)
- (libraries trashd))
+ (name trashd)
+ (modules trashd)
+ (libraries unix fileutils))

@@ -4,7 +4,7 @@ let long_argv =
     "_build/default/bin/main.ml";
     "_build/default/lib/daemon.ml";
     "_build/default/lib/lib.ml";
-    "_build/default/test/test_trashd.ml";
+    "_build/default/test/test_Trash.ml";
     "lib/daemon.ml";
     "lib/lib.ml";
     "_opam/doc/astring/examples.ml";
@@ -694,7 +694,7 @@ let long_argv =
     "_opam/lib/yojson/yojson.ml";
     "_opam/lib/yojson/yojson__.ml";
     "_opam/share/ocaml-config/gen_ocaml_config.ml";
-    "test/test_trashd.ml";
+    "test/test_Trash.ml";
   ]
 
 let single_argv = [ "trashd" ]
