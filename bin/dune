@@ -8,4 +8,4 @@
  (public_name trashd)
  (name trashd)
  (modules trashd)
- (libraries unix fileutils))
+ (libraries unix fileutils trash))
