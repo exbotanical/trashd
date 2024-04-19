@@ -1,7 +1,5 @@
-let default_trash_dir = Sys.getenv "HOME" ^ "/.trash"
-
 let () =
-  Trash.Lib.maybe_create_trash_dir default_trash_dir;
+  Trash.Lib.maybe_create_trash_dir Trash.Defaults.trash_dir;
 
   if Array.length Sys.argv < 2 then
     Printf.printf "Usage: %s (PATH|GLOB)...\n" Sys.argv.(0)
@@ -14,7 +12,7 @@ let () =
       if not exists then
         raise (Failure (Printf.sprintf "File not found %s" path));
 
-      let dest = Trash.Lib.get_dest_path default_trash_dir path in
+      let dest = Trash.Lib.get_dest_path Trash.Defaults.trash_dir path in
 
       print_string (Printf.sprintf "Moving %s to %s" path dest);
       FileUtil.mv path dest
